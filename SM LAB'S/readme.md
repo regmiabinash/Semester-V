@@ -10,13 +10,13 @@
   <tbody>
     <tr>
       <td>1</td>
-      <td>Project Alpha</td>
-      <td>2025-01-10</td>
-      <td>2025-01-15</td>
+      <td>Continuous System Simulation - Chemical Reactions Simulation</td>
+      <td>2025-12-17</td>
+      <td>2026-01-04</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>Project Beta</td>
+      <td></td>
       <td>2025-01-12</td>
       <td>2025-01-20</td>
     </tr>
