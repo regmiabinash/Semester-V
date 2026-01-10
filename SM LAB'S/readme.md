@@ -16,9 +16,9 @@
     </tr>
     <tr>
       <td>2</td>
-      <td></td>
-      <td>2025-01-12</td>
-      <td>2025-01-20</td>
+      <td>Discrete System Using Monte Carlo Method: Estimating Value of Pi</td>
+      <td>2026-01-04</td>
+      <td>2026-01-07</td>
     </tr>
 
   <tr>
