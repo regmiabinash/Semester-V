@@ -1,0 +1,35 @@
+#head1{
+    color: #c03535;
+    padding: 40px;
+}
+.head2{
+    color:yellow;
+    padding: 50px;
+}
+p{
+    color:blue;
+    padding: 30px;
+}
+#div1{
+    height:400px;
+    width: 400px;
+    background-color: rgb(188, 128, 240);
+
+    border-width: 2px;
+    border-color: red;
+    border-style: dotted;
+    /* solid, double , dotted */
+    border-radius: 45%;
+    padding: 40px;
+}
+#lead3{
+    color:rgb(13, 9, 9);
+    padding: 40px;
+}
+
+body{
+    border: 2px solid aqua;
+    border-radius: 20px;
+    padding: 110px;
+}
+
