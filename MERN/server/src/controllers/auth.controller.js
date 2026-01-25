@@ -3,6 +3,7 @@ import User from '../models/user.model.js'
 
 import { hashPassword, comparePassword} from '../utils/bcrypt.utils.js';
 import {generateToken} from '../utils/jwt.utils.js'
+import { access } from 'fs';
 
 
 
@@ -70,7 +71,7 @@ try{
         throw new Error("Invalid email or password")
     }
 
-    const acess_token=generateToken({
+    const access_token=generateToken({
         id:user._id,
         email:user.email,
         name:user.name
@@ -79,7 +80,8 @@ try{
 
     res.status(201).json({
         message:"login success",
-        data:user
+        data:user,
+        access_token:access_token
     });
 
 }catch(error){
