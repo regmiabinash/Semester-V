@@ -7,23 +7,23 @@ const router = express.Router()
 router.post('/',authenticate,createTask)
 
 // update task
-router.put('/:id',updateTask)      
+router.put('/:id',authenticate,updateTask)      
 
 // get all
-router.get('/',getAll)    
+router.get('/',authenticate,getAll)    
 
 // delete
-router.delete('/:id',deleteTask)    
+router.delete('/:id',authenticate,deleteTask)    
 
 // get by id
 router.get('/:id',getById)
 
 // pin task
-router.put('/pin/:id',pinTask)
+router.put('/pin/:id',authenticate,pinTask)
 
 
 // get all pinned tasks
-router.get('/pinned/all',getAllPinned)
+router.get('/pinned/all',authenticate,getAllPinned)
 
 // export
 export default router

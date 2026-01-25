@@ -1,9 +1,13 @@
 import Task from "../models/taskc.js";
 
+
+
+// postbox not working . need help
 //   get all task
 export const getAll = async(req,res,next)=>{
     try{
-        const tasks = await Task.find();
+        const user = req.user.id
+        const tasks = await Task.find({user:user}).populate('user');
         res.status(200).json({
             message:'tasks fetched',
             data:tasks,
@@ -18,8 +22,9 @@ export const getAll = async(req,res,next)=>{
 // get by id
 export const getById = async(req,res,next)=>{
     try{
+    const user = req.user.id
     const id = req.params.id;
-    const task = await Task.findOne({_id:id});  
+    const task = await Task.findOne({_id:id, user}).populate('user');  
     if(!task){
         next({
             status:404,
@@ -39,7 +44,9 @@ export const getById = async(req,res,next)=>{
 // create task
 export const createTask = async(req,res,next)=>{
     try{
-    const {title,text,priority,user,pinned}=req.body;
+    const user=req.user.id
+    const {title,text,priority,pinned}=req.body;
+
     if(!title){
         next({      
             status:400,
@@ -53,7 +60,7 @@ export const createTask = async(req,res,next)=>{
             message:'Task text is required'
         })
     } 
-    const task = await Task.create({title,text,priority,user,pinned});
+    const task = await Task.create({title,text,priority,user,pinned}.populate('user'));
     res.status(201).json({
         message:'task created successfully',
         data:task,
@@ -67,8 +74,9 @@ export const createTask = async(req,res,next)=>{
 export const updateTask = async(req,res,next)=>{
     try{
     const {id} = req.params;
-    const {title,text,priority,user,pinned}=req.body;
-    const task = await Task.findOne({_id:id,user:user});  
+    const user = req.user.id
+    const {title,text,priority,pinned}=req.body;
+    const task = await Task.findOne({_id:id,user:user}).populate('user');  
     if(!task){
         next({
             status:404,
@@ -98,8 +106,9 @@ export const updateTask = async(req,res,next)=>{
 // delete task
 export const deleteTask = async(req,res,next)=>{
     try{
+    const user= req.user.id
     const {id} = req.params;
-    const task = await Task.findOne({_id:id});  
+    const task = await Task.findOne({_id:id,user:user}).populate('user');  
     if(!task){
         next({              
             message:'Task not found',
