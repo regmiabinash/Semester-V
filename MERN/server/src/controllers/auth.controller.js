@@ -2,6 +2,7 @@ import { nextTick } from 'process';
 import User from '../models/user.model.js'
 
 import { hashPassword, comparePassword} from '../utils/bcrypt.utils.js';
+import {generateToken} from '../utils/jwt.utils.js'
 
 
 
@@ -68,6 +69,13 @@ try{
     if(!is_pass_matched){
         throw new Error("Invalid email or password")
     }
+
+    const acess_token=generateToken({
+        id:user._id,
+        email:user.email,
+        name:user.name
+
+    })
 
     res.status(201).json({
         message:"login success",
