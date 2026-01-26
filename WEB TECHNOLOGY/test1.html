@@ -6,14 +6,20 @@
     <title>Document</title>
 </head>
 <script src="filename.js"></script>
-<SCript>
-    PROMPT("Are you sure to press?");
-</SCript>
 <body>
     <button onclick="confirm('hello world')">click me</button><br><hr>
     <button onclick="confirm('are you sure to delete?');">delete</button><br><hr>
     <button id="toggleButton">Show/Hide Paragraph</button>
     <p id="toggleParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, veritatis obcaecati enim veniam sapiente vitae voluptas nisi nobis placeat laudantium a est nulla repellendus atque voluptate voluptates maxime ex asperiores!</p>
+    <script>
+        PROMPT("Are you sure to press?");
+        var x=multiply(8,3);
+        document.getElementById("demo").innerHTML=x;
+        function multiply(a,b){
+            return a*b;
+        }
+    </script>
+    <p id="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse error alias illum enim vitae magni sunt fugit soluta assumenda? Doloribus, eos doloremque. Nesciunt laudantium, dolorem delectus explicabo id nam labore.</p>
     <!-- <button onclick="toggleParagraphClass()">Hide Paragraph</button> -->
     
 </body>

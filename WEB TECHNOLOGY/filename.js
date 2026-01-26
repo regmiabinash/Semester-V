@@ -6,11 +6,28 @@
 //   const paragraph = document.getElementById("myParagraph");
 //   paragraph.classList.toggle("hidden");
 // }
-const toggleButton = document.getElementById('toggleButton');
-const toggleParagraph = document.getElementById('toggleParagraph');
+// const toggleButton = document.getElementById('toggleButton');
+// const toggleParagraph = document.getElementById('toggleParagraph');
 
-// Add a click event listener to the button
-toggleButton.addEventListener('click', function() {
-  // Toggle the 'hidden' class on the paragraph
-  toggleParagraph.classList.toggle('hidden');
-});
+// // Add a click event listener to the button
+// toggleButton.addEventListener('click', function() {
+//   // Toggle the 'hidden' class on the paragraph
+//   toggleParagraph.classList.toggle('hidden');
+// });
+
+var txt1="Ayush";
+var txt2=" Pant";
+var txt3=txt1+"" + txt2;
+var txt1="What a ";txt1+="big  gyatt!";
+console.log(txt3);
+console.log(txt1)
+
+// var x=5+5;
+// var y="5"+5;
+// var z="Hello"+5;
+var x=64
+var y=5
+var z=x+y
+console.log(z)
+
+
