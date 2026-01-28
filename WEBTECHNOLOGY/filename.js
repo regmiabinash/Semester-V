@@ -15,19 +15,37 @@
 //   toggleParagraph.classList.toggle('hidden');
 // });
 
-var txt1="Ayush";
-var txt2=" Pant";
-var txt3=txt1+"" + txt2;
-var txt1="What a ";txt1+="big  gyatt!";
-console.log(txt3);
-console.log(txt1)
+function add(a,b,z){
+    return a+b+z;
+    // console.log(calculator);
+}
 
-// var x=5+5;
-// var y="5"+5;
-// var z="Hello"+5;
-var x=64
-var y=5
-var z=x+y
-console.log(z)
+function multiply(a,b){
+    return a*b;
+}
+
+function concat(a,b){
+    return a+b;
+}
+
+console.log(concat("Ayush ","Pant"));
+
+console.log(add(5,6,7));
+console.log(multiply(5,6));
+
+// var txt1="Ayush";
+// var txt2=" Pant";
+// var txt3=txt1+"" + txt2;
+// var txt1="What a ";txt1+="!";
+// console.log(txt3);
+// console.log(txt1)
+
+// // var x=5+5;
+// // var y="5"+5;
+// // var z="Hello"+5;
+// var x=64
+// var y=5
+// var z=x+y
+// console.log(z)
 
 

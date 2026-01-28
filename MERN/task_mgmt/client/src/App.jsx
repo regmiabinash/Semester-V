@@ -5,7 +5,7 @@ import RegisterPage from './pages/register.page.jsx';
 function App() {
 
   return (
-    <main className='h-screen min-w-full'>
+    <main className='h-screen min-w-full tracking-wider'>
       <RegisterPage />
     </main>
     

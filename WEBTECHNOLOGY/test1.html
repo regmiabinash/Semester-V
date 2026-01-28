@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="filename.js"></script>
+<!-- <script src="filename.js"></script> -->
 <body>
     <button onclick="confirm('hello world')">click me</button><br><hr>
     <button onclick="confirm('are you sure to delete?');">delete</button><br><hr>
@@ -13,13 +13,30 @@
     <p id="toggleParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, veritatis obcaecati enim veniam sapiente vitae voluptas nisi nobis placeat laudantium a est nulla repellendus atque voluptate voluptates maxime ex asperiores!</p>
     <script>
         PROMPT("Are you sure to press?");
-        var x=multiply(8,3);
-        document.getElementById("demo").innerHTML=x;
         function multiply(a,b){
             return a*b;
         }
+        var x=multiply(8,3);
+        
+        function concat(a,b){
+            return a+b;
+        }
+        var y=concat("Hello ","World");
+        
+        function add(a,b){
+            return a+b;
+            
+        }
+        var z=add(5,10);
+        
+        let element=document.getElementById("demo").innerHTML=x;
+        let element=document.getElementById("demo").innerHTML+y;
+        let element=document.getElementById("demo").innerHTML+z;
+        
+        <p id="demo">cookerisgood.</p>
+        
+        
     </script>
-    <p id="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse error alias illum enim vitae magni sunt fugit soluta assumenda? Doloribus, eos doloremque. Nesciunt laudantium, dolorem delectus explicabo id nam labore.</p>
     <!-- <button onclick="toggleParagraphClass()">Hide Paragraph</button> -->
     
 </body>
