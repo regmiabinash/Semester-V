@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <script>
+        function validateForm(){
+            let x=document.forms["myForm"]["fname"].value;
+            if(x==""){
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script> -->
 </head>
 <body>
-    <p id="demo"></p>
-    <script>
+    <!-- <p id="demo"></p>
+     <script>
         var str="Apple,Banana,Kiwi";
         document.getElementById('demo').innerHTML=str.slice(10)
+    </script> --> 
+    <!-- <form name="myForm" onsubmit="return validateForm()" method="post">
+        Name:<input type="text" name="fname">
+        Email:<input type="email" name="email">
+        <input type="submit" value="Submit">
+        
+    
+    </form> -->
+    <h2>Access a javascript object</h2>
+    <p id="demo"></p>
+    <script>
+        var myObj={name:"John",age:30,city:"New York"};
+        document.getElementById('demo').innerHTML=myObj.city;
+
     </script>
 
     

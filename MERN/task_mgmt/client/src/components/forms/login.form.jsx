@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { use, useState } from 'react'
 
 const LoginForm = () => {
+    const [email,setEmail]=useState('email') ;//email
+    console.log('state',email);
+
+const onEmailChange=(e)=>{
+    console.log('email changed', e.target.value);
+    setEmail(e.target.value);
+}
+
+    // hook state, sideeffect, memoization
+    // useState()
+    // useEffect()
+    // 
+    console.log('state',email)
+
+
   return (
     
         <div className="mt-10" shadow-lg>
@@ -13,6 +28,7 @@ const LoginForm = () => {
                     {/* input */}
                     <input 
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
+                    onChange={onEmailChange}
                     id="email" 
                     type="email" 
                     placeholder="Biplob@gmail.com"  required/>
@@ -37,7 +53,7 @@ const LoginForm = () => {
                 {/* submit button */}
                 <div className="w-full mt-4">
                     <button className="w-full bg-blue-600 py-3.5 text-white font-bold rounded-md cursor-pointer"
-                    type="submit">Create Account</button>
+                    type="submit">Sign In</button>
                 </div>
                 
             </form>

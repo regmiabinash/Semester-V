@@ -1,5 +1,6 @@
 import React from 'react'
 import RegisterForm from '../components/forms/register.form.jsx'
+import {Link} from 'react-router'
 
 const RegisterPage = () => {
   return (
@@ -14,7 +15,8 @@ const RegisterPage = () => {
         {/* link to login page */}
         <div className='mt-1'>
         <p className='text-center '>Already have an account?
-            <span className="text-blue-600 italic font-semibold">login</span></p>
+          <Link to="/login"><span className="text-blue-600 italic font-semibold">login</span></Link>
+          </p>
         </div>
     </div>
 

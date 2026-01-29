@@ -1,6 +1,6 @@
 import React from 'react'
 import LoginForm from '../components/forms/login.form.jsx'
-
+import {Link} from 'react-router'
 const LoginPage = () => {
   return (
     
@@ -11,11 +11,12 @@ const LoginPage = () => {
         <p className="mt-1 text-center text-[14px]">Login account to access your tasks</p>
         {/* form */}
         <LoginForm/>
+        <p className='text-center'>
+          Don't have an account? <Link to="/register"><span className='text-blue-600 italic font-semibold'>Create Account</span></Link>
+        </p>
 
         {/* link to login page */}
         <div className='mt-1'>
-        <p className='text-center '>Don't have an account?
-            <span className="text-blue-600 italic font-semibold">create account</span></p>
         </div>
     </div>
 
