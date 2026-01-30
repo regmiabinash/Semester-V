@@ -1,25 +1,41 @@
 import React, { useState } from 'react'
 
 const LoginForm = () => {
-    const [email,setEmail]=useState('email') ;//email
-    console.log('state',email);
 
-const onEmailChange=(e)=>{
-    console.log('email changed', e.target.value);
-    setEmail(e.target.value);
-}
+    const[formData,setFormData] = useState({
+        email: "",
+        password:"",
+    });
+
+    // const [email,setEmail]=useState('email') ;//email
+    // const [password, setPassword]=useState("");
+
+
 
     // hook state, sideeffect, memoization
     // useState()
     // useEffect()
     // 
-    console.log('state',email)
+console.log('state',formData);
+
+const handleChange = (e) =>{
+    // console.log(e.target);
+    // console.log(e.target.value);
+    let name=e.target.name;
+    let value=e.target.value;
+}
+
+
+const onFormSubmit=(e)=>{
+    e.preventDefault();
+    console.log(formData);
+};
 
 
   return (
     
         <div className="mt-10" shadow-lg>
-            <form className="flex flex-col gap-4">
+            <form onSubmit={onFormSubmit} className="flex flex-col gap-4">
 
                 {/* email */}
                 <div className="flex flex-col gap-1">
@@ -28,8 +44,9 @@ const onEmailChange=(e)=>{
                     {/* input */}
                     <input 
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
-                    onChange={onEmailChange}
+                    onChange={handleChange}
                     id="email" 
+                    name='email'
                     type="email" 
                     placeholder="Biplob@gmail.com"  required/>
                 
@@ -39,7 +56,9 @@ const onEmailChange=(e)=>{
                     {/* input */}
                     <input 
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
+                    onChange={handleChange}
                     id="password" 
+                    name='password'
                     type="password" 
                     placeholder="enter password" required/>
                     
