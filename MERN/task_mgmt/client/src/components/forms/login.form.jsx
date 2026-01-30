@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { login } from '../../api/auth.api';
+
 
 const LoginForm = () => {
 
@@ -16,19 +18,34 @@ const LoginForm = () => {
     // useState()
     // useEffect()
     // 
-console.log('state',formData);
+
 
 const handleChange = (e) =>{
     // console.log(e.target);
     // console.log(e.target.value);
     let name=e.target.name;
     let value=e.target.value;
-}
+
+    setFormData({
+        ...formData,
+        [name]:value
+    })
+
+};
+
+console.log("state",formData);
 
 
-const onFormSubmit=(e)=>{
-    e.preventDefault();
-    console.log(formData);
+const onFormSubmit=async(e)=>{
+    try{
+        e.preventDefault();
+        console.log(formData);
+        const response = await login(formData);
+        console.log('on submit', response);
+
+    }catch(error){
+        console.log(error);
+    }
 };
 
 
@@ -45,10 +62,12 @@ const onFormSubmit=(e)=>{
                     <input 
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
                     onChange={handleChange}
+                    value={formData.email}
                     id="email" 
                     name='email'
                     type="email" 
-                    placeholder="Biplob@gmail.com"  required/>
+                    placeholder="Biplob@gmail.com"  
+                    required/>
                 
                 </div>
                 <div className="flex flex-col gap-1">
@@ -57,10 +76,12 @@ const onFormSubmit=(e)=>{
                     <input 
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
                     onChange={handleChange}
+                    value={formData.password}
                     id="password" 
                     name='password'
                     type="password" 
-                    placeholder="enter password" required/>
+                    placeholder="enter password" 
+                    required/>
                     
 
                 </div>

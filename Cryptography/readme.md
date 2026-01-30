@@ -17,15 +17,15 @@
         <tr><td>6</td><td>WAP to implement working of expansion and compression P-box</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>7</td><td>WAP to implement working of DES with Key generation</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>8</td><td>WAP to simulate the meet-in-the-middle attack in DES</td><td>2026/01/21</td><td>2026/01/27</td></tr>
-        <tr><td>9</td><td>WAP to implement working of AES</td><td>2026/01/21</td><td>2026/01/27</td></tr>
-        <tr><td>10</td><td>WAP to implement working of IDEA</td><td>2026/01/21</td><td>2026/01/27</td></tr>
-        <tr><td>11</td><td>WAP to simulate Extended Euclidean Algorithm</td><td></td><td></td></tr>
-        <tr><td>12</td><td>WAP to implement Fermat's, Euler's Theorem and Euler's totient function</td><td></td><td></td></tr>
-        <tr><td>13</td><td>WAP to implement polynomial arithmetic operations</td><td></td><td></td></tr>
-        <tr><td>14</td><td>WAP to test primality of large numbers</td><td></td><td></td></tr>
-        <tr><td>15</td><td>WAP to simulate Diffe-Hellman Key Exchange Protocol</td><td></td><td></td></tr>
-        <tr><td>16</td><td>WAP to implement RSA based cryptosystem</td><td></td><td></td></tr>
-        <tr><td>17</td><td>WAP to implement Elgamal Cryptosystem</td><td></td><td></td></tr>
+        <tr><td>9</td><td>WAP to implement working of AES</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>10</td><td>WAP to implement working of IDEA</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>11</td><td>WAP to simulate Extended Euclidean Algorithm</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>12</td><td>WAP to implement Fermat's, Euler's Theorem and Euler's totient function</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>13</td><td>WAP to implement polynomial arithmetic operations</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>14</td><td>WAP to test primality of large numbers</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>15</td><td>WAP to simulate Diffe-Hellman Key Exchange Protocol</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>16</td><td>WAP to implement RSA based cryptosystem</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>17</td><td>WAP to implement Elgamal Cryptosystem</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>18</td><td>WAP to implement Message Authentication Code</td><td></td><td></td></tr>
         <tr><td>19</td><td>WAP to implement MD4</td><td></td><td></td></tr>
         <tr><td>20</td><td>WAP to implement MD5</td><td></td><td></td></tr>

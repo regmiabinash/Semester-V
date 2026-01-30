@@ -7,11 +7,14 @@ import {connectDb} from './config/db.config.js'
 import authRoutes from './routes/auth.routes.js'
 import {errorHandler} from './middleways/middleware.js'
 import taskRoutes from './routes/task.route.js'
+import cors from "cors";
 // express app instance
 const app = express()
 
 
-connectDb()
+connectDb();
+// using middleware
+
 
 // using app level middleware
 
@@ -27,6 +30,9 @@ connectDb()
     //     next()
     
     // }
+    app.use(cors({
+        origin:'*'
+    }))
     app.use(express.json())
     
     app.use('/users',userRoutes)
