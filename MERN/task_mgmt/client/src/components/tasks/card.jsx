@@ -6,7 +6,7 @@ import { MdEdit } from "react-icons/md";
 
 
 
-export const Card = () => {
+const Card = () => {
   return (
     <div className='border border-gray-300 py-3 px-4 rounded-md shadow'>
       <div className='flex justify-between'>
@@ -33,3 +33,5 @@ export const Card = () => {
     </div>
   )
 }
+
+export default Card;

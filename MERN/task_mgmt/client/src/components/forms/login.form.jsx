@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { login } from '../../api/auth.api';
+import {replace, useNavigate} from "react-router";
 
 
 const LoginForm = () => {
+
+    const navigate=useNavigate()
 
     const[formData,setFormData] = useState({
         email: "",
@@ -41,7 +44,12 @@ const onFormSubmit=async(e)=>{
         e.preventDefault();
         console.log(formData);
         const response = await login(formData);
-        console.log('on submit', response);
+        if(response.data && response.access_token){
+            localStorage.setItem('acess_token', response.access_token)
+            navigate('/'),{replace:true}
+        }
+        console.log("on submit", response);
+        return(response.data)
 
     }catch(error){
         console.log(error);
