@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { login } from '../../api/auth.api';
 import {replace, useNavigate} from "react-router";
+import toast from 'react-hot-toast';
 
 
 const LoginForm = () => {
@@ -11,6 +12,8 @@ const LoginForm = () => {
         email: "",
         password:"",
     });
+
+
 
     // const [email,setEmail]=useState('email') ;//email
     // const [password, setPassword]=useState("");
@@ -46,6 +49,7 @@ const onFormSubmit=async(e)=>{
         const response = await login(formData);
         if(response.data && response.access_token){
             localStorage.setItem('acess_token', response.access_token)
+            toast.success(response.message || "Login successful");
             navigate('/'),{replace:true}
         }
         console.log("on submit", response);
@@ -53,6 +57,7 @@ const onFormSubmit=async(e)=>{
 
     }catch(error){
         console.log(error);
+        toast.error(error.message || "Login failed");
     }
 };
 

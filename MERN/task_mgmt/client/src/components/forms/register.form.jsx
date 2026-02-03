@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router';
+import { register } from '../../api/auth.api';
+import toast from 'react-hot-toast';
 
 const RegisterForm = () => {
 
     const navigate = useNavigate()
 
     const [formData,setFormData] = useState({
-        first_name: "",
-        last_name: " ",
+        name: "",
         email: "",
         password: "",   
         c_password: " ",
@@ -24,17 +26,20 @@ const RegisterForm = () => {
 
     // submit form
     const onSubmit=async(e)=>{
+        e.preventDefault();
         try {
             const {c_password,...rest}=formData;
             const response=await register(rest);
             
             if(response && response.data){
+                toast.success(response.message || "Registration successful");
                 navigate('/login')
 
 
             }
             console.log(response);
         } catch (error) {
+            toast.error(error.message || "Registration failed");
             console.log(error);
             
         }
@@ -50,30 +55,17 @@ const RegisterForm = () => {
                 {/* first name */}
                 <div className="flex flex-col gap-1">
                     {/* label */}
-                    <label className="text-[16px] font-semibold" htmlFor="first_name">First Name </label>
+                    <label className="text-[16px] font-semibold" htmlFor="first_name">Full Name </label>
                     {/* input */}
                     <input 
                     onChange={onChange}
-                    name="first_name"
+                    name="name"
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
                     id="first_name" 
                     type=" text" 
                     placeholder="Biplob" required />
                 </div>   
-                <div className="flex flex-col gap-1">
-                    <label 
-                    className="text-[16px] font-semibold" htmlFor="last_name">Last Name </label>
-                    {/* input */}
-                    <input 
-                    onChange={onChange}
-                    name="last_name"
-                    className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
-                    id="last_name" 
-                    type=" text" 
-                    placeholder="Shrestha" required/>
-                    
-
-                </div>
+             
                 {/* email */}
                 <div className="flex flex-col gap-1">
                     {/* label */}

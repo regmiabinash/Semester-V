@@ -5,6 +5,7 @@ import LoginPage from './pages/login.page.jsx';
 import {BrowserRouter,Routes,Route} from 'react-router'
 import HomePage from './pages/home.page.jsx';
 import NotFoundPage from './pages/notfound.page.jsx';
+import { Toaster} from 'react-hot-toast';
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
       </BrowserRouter>
+      <Toaster/>
 
     </main>
     
