@@ -2,6 +2,8 @@ import React from 'react'
 
 const RegisterForm = () => {
 
+    const navigate = useNavigate()
+
     const [formData,setFormData] = useState({
         first_name: "",
         last_name: " ",
@@ -21,12 +23,30 @@ const RegisterForm = () => {
     };
 
     // submit form
-    
+    const onSubmit=async(e)=>{
+        try {
+            const {c_password,...rest}=formData;
+            const response=await register(rest);
+            
+            if(response && response.data){
+                navigate('/login')
+
+
+            }
+            console.log(response);
+        } catch (error) {
+            console.log(error);
+            
+        }
+    };
+
+
 
   return (
     
         <div className="mt-10" shadow-lg>
-            <form className="flex flex-col gap-4">
+            <form className="flex flex-col gap-4"
+            onSubmit={onSubmit}>
                 {/* first name */}
                 <div className="flex flex-col gap-1">
                     {/* label */}
