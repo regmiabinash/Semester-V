@@ -43,9 +43,9 @@ export const register = async(req,res,next) =>{
 
     });
     } catch (error){
-    // res.status(500).json({
-    //     message:error?.message || 'something went wrong'
-    // })
+    res.status(500).json({
+        message:error?.message || 'something went wrong'
+    })
     next(error);
 }};
 
@@ -91,4 +91,19 @@ try{
     
    
     }}
+
+
+export const getUserDetail = async(req,res,next) =>{
+    try{
+        const id = req.user.id;
+        const user = await User.findOne({_id:id});
+        res.status(200).json({
+            message:"profile fetched",
+            data:user
+        })
+    }catch(error){
+        next(error);
+        
+    }
+}
 

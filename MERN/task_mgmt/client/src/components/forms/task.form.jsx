@@ -1,8 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
 import { TbAsterisk } from "react-icons/tb";
 import { IoMdClose } from "react-icons/io";
 
+
+const initialState = {
+    title: '',
+    text: '',
+    priority: 'low',
+    pinned: false,
+    user: ''
+}
 const AddEditTask = ({ onClose }) => {
+    const [form, setForm] = useState(initialState)
+    const [errors, setErrors] = useState({})
+
+    const onChange = (e) => {
+        const { name, value, type, checked } = e.target
+        setForm((s) => ({ ...s, [name]: type === 'checkbox' ? checked : value }))
+    }
+
+    const validate = () => {
+        const errs = {}
+        if (!form.title || form.title.trim().length < 7) errs.title = 'Title must be at least 7 characters.'
+        if (!form.text || form.text.trim().length < 12) errs.text = 'Text must be at least 12 characters.'
+        if (!['high', 'medium', 'low'].includes(form.priority)) errs.priority = 'Invalid priority.'
+        if (!form.user || form.user.trim().length === 0) errs.user = 'User id is required.'
+        return errs
+    }
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+    }
+
+
   return (
     <div className="fixed inset-0 bg-black/40 flex justify-center items-center">
       

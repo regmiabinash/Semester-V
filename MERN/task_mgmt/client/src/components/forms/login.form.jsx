@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { login } from '../../api/auth.api';
-import {replace, useNavigate} from "react-router";
+import { useNavigate} from "react-router";
 import toast from 'react-hot-toast';
 
 
@@ -51,6 +51,7 @@ const onFormSubmit=async(e)=>{
             localStorage.setItem('acess_token', response.access_token)
             toast.success(response.message || "Login successful");
             navigate('/'),{replace:true}
+            console.log("login successful");
         }
         console.log("on submit", response);
         return(response.data)

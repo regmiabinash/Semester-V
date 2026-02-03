@@ -25,6 +25,7 @@ export const authenticate =async(req,res,next)=>{
                 message:"Invalid token",
                 status:400
             })
+            return;
 
         }
 
@@ -35,7 +36,7 @@ export const authenticate =async(req,res,next)=>{
                 message:"unauthorized access. token expired",
                 status:401
             })
-            return
+            return;
 
         }
 
@@ -46,7 +47,7 @@ export const authenticate =async(req,res,next)=>{
                 message:"User not found",
                 status:404
             })
-            return
+            return;
         }
         req.user={
             id:user._id,

@@ -1,7 +1,7 @@
 // nav bar
 import { CiSearch } from "react-icons/ci";
 import UserProfile from "./user.profile.jsx";
-
+import userInfo from "../../pages/home.page.jsx";
 
 import React from 'react'
 
@@ -10,7 +10,9 @@ const NavBar = () => {
     <main className="flex justify-between items-center w-full border-b border-gray-200">
         {/* logo */}
         <div>
-            <p className="font-bold italic tracking-widest text-xl text-blue-500">Task App</p>
+            <p className="font-bold italic tracking-widest text-xl text-blue-500">
+              Task App
+              </p>
         </div>
         {/* search */}
         <div className="bg-gray-100 flex items-center w-80 border border-gray-300 px-2 py-3 rounded-nd">
@@ -26,7 +28,7 @@ const NavBar = () => {
         </div>
 
         {/* use profile */}
-        <UserProfile/>
+        <UserProfile userInfo= {userInfo}/>
 
 
     </main>

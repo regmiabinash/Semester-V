@@ -16,7 +16,7 @@ router.get('/',authenticate,getAll)
 router.delete('/:id',authenticate,deleteTask)    
 
 // get by id
-router.get('/:id',getById)
+router.get('/:id',authenticate,getById)
 
 // pin task
 router.put('/pin/:id',authenticate,pinTask)

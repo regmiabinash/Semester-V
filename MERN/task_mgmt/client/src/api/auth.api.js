@@ -23,4 +23,15 @@ export const register = async (data) => {
   }
 };
 
-// register
+// get user detail
+export const getUserDetail = async () => {
+    try {
+        const response = await api.get("/auth/user-detail");
+        return response.data
+        
+    } catch (error) {
+        
+        console.log(error);
+        throw error.response
+    }
+}
