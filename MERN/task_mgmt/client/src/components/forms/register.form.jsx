@@ -1,6 +1,28 @@
 import React from 'react'
 
 const RegisterForm = () => {
+
+    const [formData,setFormData] = useState({
+        first_name: "",
+        last_name: " ",
+        email: "",
+        password: "",   
+        c_password: " ",
+    });
+
+
+    const onChange=(e)=>{
+        const name=e.target.name;
+        const value=e.target.value;
+        setFormData({
+            ...formData,
+            [name]:value
+        });
+    };
+
+    // submit form
+    
+
   return (
     
         <div className="mt-10" shadow-lg>
@@ -11,6 +33,8 @@ const RegisterForm = () => {
                     <label className="text-[16px] font-semibold" htmlFor="first_name">First Name </label>
                     {/* input */}
                     <input 
+                    onChange={onChange}
+                    name="first_name"
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
                     id="first_name" 
                     type=" text" 
@@ -21,6 +45,8 @@ const RegisterForm = () => {
                     className="text-[16px] font-semibold" htmlFor="last_name">Last Name </label>
                     {/* input */}
                     <input 
+                    onChange={onChange}
+                    name="last_name"
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
                     id="last_name" 
                     type=" text" 
@@ -34,6 +60,8 @@ const RegisterForm = () => {
                     <label className="text-[16px] font-semibold" htmlFor="email">Email </label>
                     {/* input */}
                     <input 
+                    onChange={onChange}
+                    name='email'
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
                     id="email" 
                     type="email" 
@@ -44,6 +72,8 @@ const RegisterForm = () => {
                     <label className="text-[16px] font-semibold" htmlFor="password">Password </label>
                     {/* input */}
                     <input 
+                    onChange={onChange}
+                    name='password'
                     className="border border-gray-400 px-2 py-2.5 rounded-md focus:outline-blue-400"
                     id="password" 
                     type="password" 
