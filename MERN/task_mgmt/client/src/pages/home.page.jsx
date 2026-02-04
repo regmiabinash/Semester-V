@@ -63,7 +63,7 @@ const Homepage = () => {
 
   return (
     <main className='h-full w-full'>
-      <NavBar/>
+      <NavBar userInfo={userInfo} />
         {/* Task List */}
         <div className='grid grid-cols-3 gap-6 mt-10'>
           <Card/>

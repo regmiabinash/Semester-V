@@ -1,11 +1,10 @@
 // nav bar
 import { CiSearch } from "react-icons/ci";
 import UserProfile from "./user.profile.jsx";
-import userInfo from "../../pages/home.page.jsx";
 
 import React from 'react'
 
-const NavBar = () => {
+const NavBar = ({userInfo}) => {
   return (
     <main className="flex justify-between items-center w-full border-b border-gray-200">
         {/* logo */}

@@ -14,7 +14,7 @@ export default api;
 // interceptors to add token to request headers
 
 api.interceptors.request.use((config)=>{
-    const access_token = localStorage.getItem("access_token")
+    const access_token = localStorage.getItem("acess_token")
     if (access_token) {
         config.headers.Authorization = access_token
     }
