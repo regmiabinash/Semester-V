@@ -7,13 +7,15 @@ import AddEditTask from '../components/forms/task.form.jsx'
 import Modal from 'react-modal'
 import toast from 'react-hot-toast'
 import { getUserDetail } from '../api/auth.api.js'
+import { getAllTask } from '../api/task.api.js';
 
 
 Modal.setAppElement("#root"); // for accessibility
 
 const Homepage = () => {
   const [userInfo, setUserInfo] = useState(null)
-  const navigate=useNavigate()
+  const [tasks,setTasks] = useState(null);
+  const navigate=useNavigate();
 
   const [isAddModalOpen, setAddModalOpen] = useState({
     type:'add',
@@ -53,27 +55,41 @@ const Homepage = () => {
       }
       
     }
-  }
+  };
+
+    const getTasks = async () => {
+    try {
+      const response = await getAllTask();
+      setTasks(response.data)
+      
+      
+    } catch (error) {
+      toast.error(error?.message || "Something went wrong");
+      
+      
+    }}
 
   // fetch user details on page load 
   useEffect(()=>{
-    getProfile()
-  },[])
+    getTasks();
+    getProfile();
+  },[]);
 
 
   return (
     <main className='h-full w-full'>
       <NavBar userInfo={userInfo} />
         {/* Task List */}
+        {tasks&& tasks.length > 0 && (
+        
         <div className='grid grid-cols-3 gap-6 mt-10'>
-          <Card/>
+          {tasks.map((task)=>{
+            return <Card key={task._id} task={task}/>
           
-          <Card/>
-          
-          <Card/>
-          
-          <Card/>
+        
+        })}
         </div>
+        )}
         {/* Add new task button */}
         <button 
         onClick={openAddModal}
@@ -98,7 +114,11 @@ const Homepage = () => {
   aria-label="Close modal"
   >&times;
   </button>
-  <AddEditTask  onClose={onClose}/>
+  <AddEditTask 
+  data={isAddModalOpen.data}
+  type={isAddModalOpen.type} 
+  onClose={onClose}
+  />
 </Modal>
 
        

@@ -60,7 +60,7 @@ export const createTask = async(req,res,next)=>{
             message:'Task text is required'
         })
     } 
-    const task = await Task.create({title,text,priority,user,pinned}.populate('user'));
+    const task = await Task.create({title,text,priority,user,pinned})
     res.status(201).json({
         message:'task created successfully',
         data:task,

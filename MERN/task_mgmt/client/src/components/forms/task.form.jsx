@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import { TbAsterisk } from "react-icons/tb";
 import { IoMdClose } from "react-icons/io";
+import { addNewTask, editTask } from "../../api/task.api.js";
+import toast from "react-hot-toast";
 
 
 const initialState = {
@@ -8,11 +10,11 @@ const initialState = {
     text: '',
     priority: 'low',
     pinned: false,
-    user: ''
+  
 }
-const AddEditTask = ({ onClose }) => {
+const AddEditTask = ({ onClose, type, data }) => {
     const [form, setForm] = useState(initialState)
-    const [errors, setErrors] = useState({})
+    const [errors, setErrors] = useState(" ");
 
     const onChange = (e) => {
         const { name, value, type, checked } = e.target
@@ -28,9 +30,35 @@ const AddEditTask = ({ onClose }) => {
         return errs
     }
 
-    const onSubmit = (e) => {
-        e.preventDefault()
-    }
+  const onSubmit = async(e) => {
+        e.preventDefault();
+        try {
+          if(form.title.trim()===''){
+            setErrors('Content is required')
+            return
+          }
+          setErrors(" ");
+          
+          
+          if(type ==='add'){
+            const resp = await addNewTask(form);
+            if (resp.data){
+              toast.success(resp.message || " Task added");
+            }
+            addNewTask(form)
+          }else{
+            const resp= await editTask(data._id, form);
+            if (resp.data){
+              toast.success(resp.message || " Task updated");
+            }
+            editTask(data._id,form);
+          }
+        } catch (error) {
+          console.log(error);
+          toast.error(error.message || "Something went wrong");
+          
+        }
+    };
 
 
   return (
@@ -47,7 +75,7 @@ const AddEditTask = ({ onClose }) => {
           <IoMdClose size={22} className="text-slate-950" />
         </button>
 
-        <form className="flex flex-col gap-6">
+        <form className="flex flex-col gap-6" onSubmit={onSubmit}>
 
           {/* Title */}
           <div className="flex flex-col gap-1">
@@ -63,6 +91,7 @@ const AddEditTask = ({ onClose }) => {
               id="title"
               name="title"
               placeholder="Cryptography Assignment"
+              onChange={onChange}
               required
             />
           </div>
@@ -75,10 +104,11 @@ const AddEditTask = ({ onClose }) => {
 
             <textarea
               className="border border-gray-400 px-2 py-2.5 rounded-md text-lg bg-slate-50 text-slate-950"
-              id="description"
-              name="description"
+              id="text"
+              name="text"
               placeholder="Task description"
               rows={4}
+              onChange={onChange}
             />
           </div>
 
@@ -90,8 +120,10 @@ const AddEditTask = ({ onClose }) => {
 
             <select
               id="priority"
+              name="priority"
               defaultValue="low"
               className="border border-blue-200 px-2 py-2.5 rounded-md focus:outline-blue-400 text-lg font-bold"
+              onChange={onChange}
               required
             >
               <option value="high">High</option>
