@@ -26,15 +26,15 @@
         <tr><td>15</td><td>WAP to simulate Diffe-Hellman Key Exchange Protocol</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>16</td><td>WAP to implement RSA based cryptosystem</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>17</td><td>WAP to implement Elgamal Cryptosystem</td><td>2026/01/27</td><td>2026/02/04</td></tr>
-        <tr><td>18</td><td>WAP to implement Message Authentication Code</td><td></td><td></td></tr>
-        <tr><td>19</td><td>WAP to implement MD4</td><td></td><td></td></tr>
-        <tr><td>20</td><td>WAP to implement MD5</td><td></td><td></td></tr>
-        <tr><td>21</td><td>WAP to implement SHA-1</td><td></td><td></td></tr>
-        <tr><td>22</td><td>WAP to simulate Digital Signature based on DSS and RSA</td><td></td><td></td></tr>
-        <tr><td>23</td><td>WAP to simulate Needham-Schroeder Protocol</td><td></td><td></td></tr>
-        <tr><td>24</td><td>WAP to simulate Kerberos Protocol</td><td></td><td></td></tr>
-        <tr><td>25</td><td>WAP to implement SHA-256 and SHA-512</td><td></td><td></td></tr>
-        <tr><td>26</td><td>WAP to check if given two numbers are co-prime or not.</td><td></td><td></td></tr>
+        <tr><td>18</td><td>WAP to implement Message Authentication Code</td><td>2026/02/17</td><td>2026/02/26</td></tr>
+        <tr><td>19</td><td>WAP to implement MD4</td><td>2026/02/17</td><td>2026/02/26</td></tr>
+        <tr><td>20</td><td>WAP to implement MD5</td><td>2026/02/17</td><td>2026/02/26</td></tr>
+        <tr><td>21</td><td>WAP to implement SHA-1</td><td>2026/02/17</td><td>2026/02/26</td></tr>
+        <tr><td>22</td><td>WAP to simulate Digital Signature based on DSS and RSA</td><td>2026/02/17</td><td>2026/02/26</td></tr>
+        <tr><td>23</td><td>WAP to simulate Needham-Schroeder Protocol</td><td>2026/02/17</td><td>2026/02/26</td></tr>
+        <tr><td>24</td><td>WAP to simulate Kerberos Protocol</td><td>2026/02/17</td><td>2026/02/26</td></tr>
+        <tr><td>25</td><td>WAP to implement SHA-256 and SHA-512</td><td>2026/02/17</td><td>2026/02/26</td></tr>
+        <tr><td>26</td><td>WAP to check if given two numbers are co-prime or not.</td><td>2026/02/17</td><td>2026/02/26</td></tr>
         <tr><td>27</td><td>Preparing Linux Lab Environment</td><td></td><td></td></tr>
         <tr><td>28</td><td>Linux Basic Commands</td><td></td><td></td></tr>
         <tr><td>29</td><td>Users, Groups,Permission</td><td></td><td></td></tr>
