@@ -1,23 +1,46 @@
-# Lab 22: Digital Signature Simulation (RSA Logic)
 import hashlib
 
-def digital_signature_demo():
-    print("--- RSA Digital Signature Simulation ---")
-    # 1. Key Generation (Small primes for simulation)
+def lab22_rsa_signature_verbose():
+    print("--- RSA DIGITAL SIGNATURE VERBOSE ---")
+    
+    # 1. Key Generation
     p, q = 61, 53
     n = p * q
     phi = (p-1) * (q-1)
     e = 17
-    d = pow(e, -1, phi) # Private Key
+    d = pow(e, -1, phi)
     
-    # 2. Signing
-    message = "Digital Signature Assignment"
-    msg_hash = int(hashlib.sha256(message.encode()).hexdigest(), 16) % n
-    signature = pow(msg_hash, d, n)
-    print(f"1. Message signed. Signature: {signature}")
-    
-    # 3. Verification
-    verified_hash = pow(signature, e, n)
-    print(f"2. Verification: {'Success' if msg_hash == verified_hash else 'Failed'}")
+    print(f"[STEP 1] Keys Generated:")
+    print(f"         Public Key: (e={e}, n={n})")
+    print(f"         Private Key: (d={d}, n={n})")
 
-digital_signature_demo()
+    # 2. Message and Hashing
+    message = "Approved_Lab_22"
+    # We turn the string hash into an integer to perform math on it
+    h_hex = hashlib.sha256(message.encode()).hexdigest()
+    m = int(h_hex, 16) % n
+    print(f"\n[STEP 2] Hashing Message:")
+    print(f"         Message: '{message}'")
+    print(f"         Full Hash: {h_hex[:16]}...")
+    print(f"         Message Integer (m = hash mod n): {m}")
+
+    # 3. Signing
+    print(f"\n[STEP 3] Signing with Private Key (d):")
+    print(f"         Calculating: S = {m}^{d} mod {n}")
+    signature = pow(m, d, n)
+    print(f"         Generated Signature (S): {signature}")
+
+    # 4. Verification
+    print(f"\n[STEP 4] Verifying with Public Key (e):")
+    print(f"         Calculating: V = {signature}^{e} mod {n}")
+    decrypted_m = pow(signature, e, n)
+    print(f"         Decrypted Value (V): {decrypted_m}")
+
+    # 5. Final Comparison
+    print(f"\n[STEP 5] Integrity Check:")
+    if m == decrypted_m:
+        print("         Result: SUCCESS! m == V. The signature is valid.")
+    else:
+        print("         Result: FAILED! Signature is invalid.")
+
+lab22_rsa_signature_verbose()
