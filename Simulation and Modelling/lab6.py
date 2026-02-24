@@ -1,4 +1,4 @@
-# Function to generate random numbers using Linear Congruential Method
+# Function to generate random numbers using Linear Congruential Method lab 6
 def linear_congruential_method(X0, a, c, m, n):
     Xn = X0  # Initialize seed value
     print("\nGenerated Random Numbers [ Abinash Regmi ]:")
