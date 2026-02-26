@@ -1,3 +1,4 @@
+# lab4.py - Simulation and Modelling Lab 4: Dice Roll Simulation
 import random
 import numpy as np
 import matplotlib.pyplot as plt
