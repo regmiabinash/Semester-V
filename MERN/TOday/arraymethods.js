@@ -6,7 +6,12 @@ const callback=(value,index,arr)=>{
 console.log(value,index,arr)
 return value
 }
-
+ 
+const here=(ok)={
+console.log(ok);
+return ok
+    
+}
 // let res=numbers.forEach(callback)
 // numbers.forEach((v,value)=>{
 //     console.log(value)
