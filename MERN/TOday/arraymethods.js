@@ -30,5 +30,5 @@ numbers.filter(()=>{})
 
 // reduce
 numbers.reduce((acc)=>{},0)
-// all are higher order function of
+// all are higher order function of the
 
