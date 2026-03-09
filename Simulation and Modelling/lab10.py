@@ -1,3 +1,4 @@
+# this is lab 10 for chi-square test of goodness of fit
 import numpy as np
 from scipy.stats import chi2
 from tabulate import tabulate
