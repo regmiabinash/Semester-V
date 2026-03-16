@@ -1,1 +1,1 @@
-// Lab3 daa ko ho
+// Lab3 daa ko ho ni
