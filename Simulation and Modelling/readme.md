@@ -19,10 +19,10 @@
         <tr><td>8</td><td>Implementing Mid Square Method of Random Number Generation using Python</td><td>2026/02/26</td><td>2026/03/13</td></tr>
         <tr><td>9</td><td>Implementing the Kolmogorov-Smirnov (KS) Test for Uniformity using Python</td><td>2026/02/26</td><td>2026/03/13</td></tr>
         <tr><td>10</td><td>Implementing the Chi-Sqaure Test for Uniformity using Python</td><td>2026/02/26</td><td>2026/03/13</td></tr>
-        <tr><td>11</td><td></td><td></td><td></td></tr>
-        <tr><td>12</td><td></td><td></td><td></td></tr>
-        <tr><td>13</td><td></td><td></td><td></td></tr>
-        <tr><td>14</td><td></td><td></td><td></td></tr>
+        <tr><td>11</td><td>2026/03/26</td><td>2026/04/05</td><td></td></tr>
+        <tr><td>12</td><td>2026/03/26</td><td>2026/04/05</td><td></td></tr>
+        <tr><td>13</td><td>2026/03/26</td><td>2026/04/05</td><td></td></tr>
+        <tr><td>14</td><td>2026/03/26</td><td>2026/04/05</td><td></td></tr>
         <tr><td>15</td><td></td><td></td><td></td></tr>
         <tr><td>16</td><td></td><td></td><td></td></tr>
         <tr><td>17</td><td></td><td></td><td></td></tr>
