@@ -18,7 +18,7 @@
         <tr><td>7</td><td></td><td></td><td>before practical date</td></tr>
         <tr><td>8</td><td></td><td></td><td>before practical date</td></tr>
         <tr><td>9</td><td></td><td></td><td>before practical date</td></tr>
-        <tr><td>10</td><td></td><td></td><td></td></tr>
+        <tr><td>10</td><td></td><td></td><td>before practical date</td></tr>
         <tr><td>11</td><td></td><td></td><td></td></tr>
         <tr><td>12</td><td></td><td></td><td></td></tr>
         <tr><td>13</td><td></td><td></td><td></td></tr>
