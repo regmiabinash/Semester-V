@@ -26,7 +26,7 @@
         <tr><td>15</td><td></td><td></td><td>before practical date</td></tr>
         <tr><td>16</td><td></td><td></td><td>before practical date</td></tr>
         <tr><td>17</td><td></td><td></td><td>before practical date</td></tr>
-        <tr><td>18</td><td></td><td></td><td></td></tr>
+        <tr><td>18</td><td></td><td></td><td>before practical date</td></tr>
         <tr><td>19</td><td></td><td></td><td></td></tr>
         <tr><td>20</td><td></td><td></td><td></td></tr>
         <!-- <tr><td>21</td><td></td><td></td><td></td></tr>
