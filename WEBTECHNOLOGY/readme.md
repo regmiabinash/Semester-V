@@ -10,7 +10,7 @@
     </thead>
     <tbody>
         <tr><td>1</td><td>WAP in C to find time complexity of Bubble Sort by using RAM Model</td><td>03/10</td><td></td></tr>
-        <tr><td>2</td><td></td><td></td><td></td></tr>
+        <tr><td>2</td><td>WAP in C to find time complexity of Insertion Sort by using RAM Model</td><td>03/10</td><td></td></tr>
         <tr><td>3</td><td></td><td></td><td></td></tr>
         <tr><td>4</td><td></td><td></td><td></td></tr>
         <tr><td>5</td><td></td><td></td><td></td></tr>
