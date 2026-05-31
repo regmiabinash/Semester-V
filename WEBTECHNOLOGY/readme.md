@@ -25,7 +25,7 @@
         <tr><td>14</td><td>WAP in C to find shortest path by using Djikstra's algorithm</td><td></td><td></td></tr>
         <tr><td>15</td><td>WAP in C to find spanning tree of given graph by using Kruskal's algorithm</td><td></td><td></td></tr>
         <tr><td>16</td><td>WAP in C to find spanning tree of given graph by using Prim's algorithm</td><td>03/12</td><td></td></tr>
-        <tr><td>17</td><td></td><td></td><td></td></tr>
+        <tr><td>17</td><td>WAP in C to find max and min value from given dataset by using min-max algorithm</td><td></td><td></td></tr>
         <tr><td>18</td><td></td><td></td><td></td></tr>
         <tr><td>19</td><td></td><td></td><td></td></tr>
         <tr><td>20</td><td></td><td></td><td></td></tr>
