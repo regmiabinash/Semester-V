@@ -19,9 +19,9 @@
         <tr><td>8</td><td>WAP in C to sort given numbers using Randomized Quick Sort and find execution time by using clock</td><td></td><td></td></tr>
         <tr><td>9</td><td>WAP in C to give optimal multiplication cost of given matrices</td><td></td><td></td></tr>
         <tr><td>10</td><td>WAP in C to sort sequence of jobs and their cost by using job sequencing </td><td></td><td></td></tr>
-        <tr><td>11</td><td></td><td></td><td></td></tr>
-        <tr><td>12</td><td></td><td></td><td></td></tr>
-        <tr><td>13</td><td></td><td></td><td></td></tr>
+        <tr><td>11</td><td>WAP in C to simulate N-queen problem by using backtracking algorithm</td><td></td><td></td></tr>
+        <tr><td>12</td><td>WAP in C to find maximum profit by using 0/1 Knapsack profile</td><td></td><td></td></tr>
+        <tr><td>13</td><td>WAP in C to find path compression of given text file by using Huffman algorithm</td><td></td><td></td></tr>
         <tr><td>14</td><td></td><td></td><td></td></tr>
         <tr><td>15</td><td></td><td></td><td></td></tr>
         <tr><td>16</td><td></td><td></td><td></td></tr>
