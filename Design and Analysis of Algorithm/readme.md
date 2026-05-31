@@ -11,13 +11,13 @@
     <tbody>
         <tr><td>1</td><td>WAP in C to find time complexity of Bubble Sort by using RAM Model</td><td>10 March, 2026</td><td>before practical exam</td></tr>
         <tr><td>2</td><td>WAP in C to find time complexity of Insertion Sort by using RAM Model</td><td>1o March, 2026</td><td>before practical date</td></tr>
-        <tr><td>3</td><td></td><td>10 March 2026</td><td>before practical date</td></tr>
+        <tr><td>3</td><td></td><td>10 March, 2026</td><td>before practical date</td></tr>
         <tr><td>4</td><td></td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>5</td><td></td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>6</td><td></td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>7</td><td></td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>8</td><td></td><td>March 2026</td><td>before practical date</td></tr>
-        <tr><td>9</td><td></td><td>March 2026</td><td>before practical date</td></tr>
+        <tr><td>9</td><td></td><td>10 March, 2026</td><td>before practical date</td></tr>
         <tr><td>10</td><td></td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>11</td><td></td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>12</td><td></td><td>March 2026</td><td>before practical date</td></tr>
