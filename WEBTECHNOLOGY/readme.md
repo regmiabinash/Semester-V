@@ -22,7 +22,7 @@
         <tr><td>11</td><td>WAP in C to simulate N-queen problem by using backtracking algorithm</td><td></td><td></td></tr>
         <tr><td>12</td><td>WAP in C to find maximum profit by using 0/1 Knapsack profile</td><td></td><td></td></tr>
         <tr><td>13</td><td>WAP in C to find path compression of given text file by using Huffman algorithm</td><td></td><td></td></tr>
-        <tr><td>14</td><td></td><td></td><td></td></tr>
+        <tr><td>14</td><td>WAP in C to find shortest path by using Djikstra's algorithm</td><td></td><td></td></tr>
         <tr><td>15</td><td></td><td></td><td></td></tr>
         <tr><td>16</td><td></td><td></td><td></td></tr>
         <tr><td>17</td><td></td><td></td><td></td></tr>
