@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr><td>1</td><td></td><td>March 2026</td><td>before practical exam</td></tr>
+        <tr><td>1</td><td>WAP in C to find time complexity of Bubble Sort by using RAM Model</td><td>March 2026</td><td>before practical exam</td></tr>
         <tr><td>2</td><td></td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>3</td><td></td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>4</td><td></td><td>March 2026</td><td>before practical date</td></tr>

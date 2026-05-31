@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr><td>1</td><td>WAP in C to find time complexity of Bubble Sort by using RAM Model</td><td>03/10</td><td></td></tr>
+        <tr><td>1</td><td></td><td>03/10</td><td></td></tr>
         <tr><td>2</td><td>WAP in C to find time complexity of Insertion Sort by using RAM Model</td><td>03/10</td><td></td></tr>
         <tr><td>3</td><td>WAP in C to find time complexity of Selection Sort using RAM Model</td><td></td><td></td></tr>
         <tr><td>4</td><td>WAP in C to find GCD of given two numbers.</td><td></td><td></td></tr>
@@ -26,7 +26,7 @@
         <tr><td>15</td><td>WAP in C to find spanning tree of given graph by using Kruskal's algorithm</td><td></td><td></td></tr>
         <tr><td>16</td><td>WAP in C to find spanning tree of given graph by using Prim's algorithm</td><td>03/12</td><td></td></tr>
         <tr><td>17</td><td>WAP in C to find max and min value from given dataset by using min-max algorithm</td><td></td><td></td></tr>
-        <tr><td>18</td><td>WAP in C to select ith smallest element by using selection in expec...</td><td></td><td></td></tr>
+        <tr><td>18</td><td>WAP in C to select ith smallest element by using selection in expected linear time algorithm</td><td></td><td></td></tr>
         <tr><td>19</td><td></td><td></td><td></td></tr>
         <tr><td>20</td><td>WAP in C to find subset sum by using backtracking algorithm</td><td></td><td></td></tr>
         <tr><td>21</td><td></td><td></td><td></td></tr>
