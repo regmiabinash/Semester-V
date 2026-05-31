@@ -13,9 +13,9 @@
         <tr><td>2</td><td>WAP in C to find time complexity of Insertion Sort by using RAM Model</td><td>03/10</td><td></td></tr>
         <tr><td>3</td><td>WAP in C to find time complexity of Selection Sort using RAM Model</td><td></td><td></td></tr>
         <tr><td>4</td><td>WAP in C to find GCD of given two numbers.</td><td></td><td></td></tr>
-        <tr><td>5</td><td>WAP in C to sort given numbers using Merge Sort and find execution time by using clock</td><td></td><td></td></tr>
-        <tr><td>6</td><td></td><td></td><td></td></tr>
-        <tr><td>7</td><td></td><td></td><td></td></tr>
+        <tr><td>5</td><td>WAP in C to sort given numbers using Merge Sort and find execution time by using clock function</td><td></td><td></td></tr>
+        <tr><td>6</td><td>WAP in C to sort given numbers using Quick Sort and find execution time by using clock function</td><td></td><td></td></tr>
+        <tr><td>7</td><td>WAP in C to sort given numbers using Heap Sort and find execution time by using clock</td><td></td><td></td></tr>
         <tr><td>8</td><td></td><td></td><td></td></tr>
         <tr><td>9</td><td></td><td></td><td></td></tr>
         <tr><td>10</td><td></td><td></td><td></td></tr>
