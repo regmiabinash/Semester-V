@@ -11,7 +11,7 @@
     <tbody>
         <tr><td>1</td><td>Prepare meta tags for XYZ travel agency,  Kathmandu.</td><td>03/10</td><td></td></tr>
         <tr><td>2</td><td>Create a small web page (about_us.html) including title, header,  description and footer.</td><td>03/10</td><td></td></tr>
-        <tr><td>3</td><td>WAP in C to find time complexity of Selection Sort using RAM Model</td><td></td><td></td></tr>
+        <tr><td>3</td><td></td><td></td><td></td></tr>
         <tr><td>4</td><td>WAP in C to find GCD of given two numbers.</td><td></td><td></td></tr>
         <tr><td>5</td><td>WAP in C to sort given numbers using Merge Sort and find execution time by using clock function</td><td></td><td></td></tr>
         <tr><td>6</td><td>WAP in C to sort given numbers using Quick Sort and find execution time by using clock function</td><td></td><td></td></tr>
