@@ -14,7 +14,7 @@
         <tr><td>3</td><td>Create a Signup form (signup.html) with at least name, address, phone number, email, DOB and photo fields</td><td></td><td></td></tr>
         <tr><td>4</td><td>Prepare an external CSS file for body, table and image and include it in an HTML page.</td><td></td><td></td></tr>
         <tr><td>5</td><td></td><td></td><td></td></tr>
-        <tr><td>6</td><td>WAP in C to sort given numbers using Quick Sort and find execution time by using clock function</td><td></td><td></td></tr>
+        <tr><td>6</td><td></td><td></td><td></td></tr>
         <tr><td>7</td><td>WAP in C to sort given numbers using Heap Sort and find execution time by using clock</td><td></td><td></td></tr>
         <tr><td>8</td><td>WAP in C to sort given numbers using Randomized Quick Sort and find execution time by using clock</td><td></td><td></td></tr>
         <tr><td>9</td><td>WAP in C to give optimal multiplication cost of given matrices</td><td></td><td></td></tr>
