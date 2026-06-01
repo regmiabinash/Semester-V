@@ -15,7 +15,7 @@
         <tr><td>4</td><td>Prepare an external CSS file for body, table and image and include it in an HTML page.</td><td></td><td></td></tr>
         <tr><td>5</td><td>Create a form and apply the required JavaScript validation for it.</td><td></td><td></td></tr>
         <tr><td>6</td><td>Write an XML for 5 students, including reg.no, name, roll no, and project name.</td><td></td><td></td></tr>
-        <tr><td>7</td><td>WAP in C to sort given numbers using Heap Sort and find execution time by using clock</td><td></td><td></td></tr>
+        <tr><td>7</td><td></td><td></td><td></td></tr>
         <tr><td>8</td><td>WAP in C to sort given numbers using Randomized Quick Sort and find execution time by using clock</td><td></td><td></td></tr>
         <tr><td>9</td><td>WAP in C to give optimal multiplication cost of given matrices</td><td></td><td></td></tr>
         <tr><td>10</td><td>WAP in C to sort sequence of jobs and their cost by using job sequencing </td><td></td><td></td></tr>
