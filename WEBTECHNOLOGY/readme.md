@@ -17,7 +17,7 @@
         <tr><td>6</td><td>Write an XML for 5 students, including reg.no, name, roll no, and project name.</td><td></td><td></td></tr>
         <tr><td>7</td><td>Display student name and project name from above (Question no. 6) XML file using XPath.</td><td></td><td></td></tr>
         <tr><td>8</td><td>Create a login page and check for user authentication using server-side code and database.</td><td></td><td></td></tr>
-        <tr><td>9</td><td></td><td></td><td></td></tr>
+        <tr><td>9</td><td>Write code for "Remember me" feature in the login page.</td><td></td><td></td></tr>
         <tr><td>10</td><td>WAP in C to sort sequence of jobs and their cost by using job sequencing </td><td></td><td></td></tr>
         <tr><td>11</td><td>WAP in C to simulate N-queen problem by using backtracking algorithm</td><td></td><td></td></tr>
         <tr><td>12</td><td>WAP in C to find maximum profit by using 0/1 Knapsack profile</td><td></td><td></td></tr>
