@@ -16,7 +16,7 @@
         <tr><td>5</td><td>Create a form and apply the required JavaScript validation for it.</td><td></td><td></td></tr>
         <tr><td>6</td><td>Write an XML for 5 students, including reg.no, name, roll no, and project name.</td><td></td><td></td></tr>
         <tr><td>7</td><td>Display student name and project name from above (Question no. 6) XML file using XPath.</td><td></td><td></td></tr>
-        <tr><td>8</td><td>WAP in C to sort given numbers using Randomized Quick Sort and find execution time by using clock</td><td></td><td></td></tr>
+        <tr><td>8</td><td></td><td></td><td></td></tr>
         <tr><td>9</td><td>WAP in C to give optimal multiplication cost of given matrices</td><td></td><td></td></tr>
         <tr><td>10</td><td>WAP in C to sort sequence of jobs and their cost by using job sequencing </td><td></td><td></td></tr>
         <tr><td>11</td><td>WAP in C to simulate N-queen problem by using backtracking algorithm</td><td></td><td></td></tr>

@@ -16,7 +16,7 @@
         <tr><td>5</td><td>WAP in C to sort given numbers using Merge Sort and find execution time by using clock function</td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>6</td><td>WAP in C to sort given numbers using Quick Sort and find execution time by using clock function</td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>7</td><td>WAP in C to sort given numbers using Heap Sort and find execution time by using clock function</td><td>March 2026</td><td>before practical date</td></tr>
-        <tr><td>8</td><td></td><td>March 2026</td><td>before practical date</td></tr>
+        <tr><td>8</td><td>WAP in C to sort given numbers using Randomized Quick Sort and find execution time by using clock function</td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>9</td><td></td><td>10 March, 2026</td><td>before practical date</td></tr>
         <tr><td>10</td><td></td><td>11 March, 2026</td><td>before practical date</td></tr>
         <tr><td>11</td><td></td><td>March 2026</td><td>before practical date</td></tr>
