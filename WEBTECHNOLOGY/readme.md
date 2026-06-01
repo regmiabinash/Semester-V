@@ -20,7 +20,7 @@
         <tr><td>9</td><td>Write code for "Remember me" feature in the login page.</td><td></td><td></td></tr>
         <tr><td>10</td><td>Create a database and a table. Store user input from question no.3 in the database table using PHP and MySQL.</td><td></td><td></td></tr>
         <tr><td>11</td><td>Retrieve 5 rows from the database table and display in a page. Order the results so the youngest user appears first and the oldest appears last.</td><td></td><td></td></tr>
-        <tr><td>12</td><td></td><td></td><td></td></tr>
+        <tr><td>12</td><td>Create a program to edit and delete the records displayed in the previous question. Use JavaScript confirmation before editing or deleting the records. </td><td></td><td></td></tr>
         <tr><td>13</td><td>WAP in C to find path compression of given text file by using Huffman algorithm</td><td></td><td></td></tr>
         <tr><td>14</td><td>WAP in C to find shortest path by using Djikstra's algorithm</td><td></td><td></td></tr>
         <tr><td>15</td><td>WAP in C to find spanning tree of given graph by using Kruskal's algorithm</td><td></td><td></td></tr>
