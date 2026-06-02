@@ -25,7 +25,7 @@
         <tr><td>14</td><td>WAP in C to find shortest path by using Djikstra's algorithm</td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>15</td><td>WAP in C to find spanning tree of given graph by using Kruskal's algorithm</td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>16</td><td>WAP in C to find spanning tree of given graph by using Prim's algorithm</td><td>11 March, 2026</td><td>before practical date</td></tr>
-        <tr><td>17</td><td></td><td>12 March, 2026</td><td>before practical date</td></tr>
+        <tr><td>17</td><td>WAP in C to find max and min value from given dataset by using min-max algorithm</td><td>12 March, 2026</td><td>before practical date</td></tr>
         <tr><td>18</td><td></td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>19</td><td></td><td>March 2026</td><td>before pracical date</td></tr>
         <tr><td>20</td><td></td><td>March 2026 </td><td>before practical date</td></tr>
