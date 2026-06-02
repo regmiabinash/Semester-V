@@ -27,8 +27,8 @@
         <tr><td>16</td><td>WAP in C to find spanning tree of given graph by using Prim's algorithm</td><td>11 March, 2026</td><td>before practical date</td></tr>
         <tr><td>17</td><td>WAP in C to find max and min value from given dataset by using min-max algorithm</td><td>12 March, 2026</td><td>before practical date</td></tr>
         <tr><td>18</td><td>WAP in C to select ith smallest element by using selection in expected linear time algorithm</td><td>March 2026</td><td>before practical date</td></tr>
-        <tr><td>19</td><td></td><td>March 2026</td><td>before pracical date</td></tr>
-        <tr><td>20</td><td>WAP in C to find subset sum by using backtracking algorithm</td><td>March 2026 </td><td>before practical date</td></tr>
+        <tr><td>19</td><td>WAP in C to find subset sum by using backtracking algorithm</td><td>March 2026</td><td>before pracical date</td></tr>
+        <tr><td>20</td><td>WAP in C to simulate N-queen problem by using backtracking.</td><td>March 2026 </td><td>before practical date</td></tr>
         <!-- <tr><td>21</td><td></td><td></td><td></td></tr>
         <tr><td>22</td><td></td><td></td><td></td></tr>
         <tr><td>23</td><td></td><td></td><td></td></tr>
