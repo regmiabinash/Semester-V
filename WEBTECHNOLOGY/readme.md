@@ -11,7 +11,7 @@
     <tbody>
         <tr><td>1</td><td>Prepare meta tags for XYZ travel agency,  Kathmandu.</td><td>19/05/2026</td><td></td></tr>
         <tr><td>2</td><td>Create a small web page (about_us.html) including title, header,  description and footer.</td><td>19/05/2026</td><td></td></tr>
-        <tr><td>3</td><td>Create a Signup form (signup.html) with at least name, address, phone number, email, DOB and photo fields</td><td></td><td></td></tr>
+        <tr><td>3</td><td>Create a Signup form (signup.html) with at least name, address, phone number, email, DOB and photo fields</td><td>19/05/2026</td><td></td></tr>
         <tr><td>4</td><td>Prepare an external CSS file for body, table and image and include it in an HTML page.</td><td></td><td></td></tr>
         <tr><td>5</td><td>Create a form and apply the required JavaScript validation for it.</td><td></td><td></td></tr>
         <tr><td>6</td><td>Write an XML for 5 students, including reg.no, name, roll no, and project name.</td><td></td><td></td></tr>
