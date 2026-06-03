@@ -22,7 +22,7 @@
         <tr><td>11</td><td>WAP in C to find maximum profit by using 0/1 Knapsack problem.</td><td>11 March, 2026</td><td>before practical date</td></tr>
         <tr><td>12</td><td>WAP in C to find path compression of given text file by using Huffman algorithm.</td><td>11 March, 2026</td><td>before practical date</td></tr>
         <tr><td>13</td><td>WAP in C to find shortest path by using FLoyd Warshall algorithm (all pair).</td><td>11 March, 2026</td><td>before practical date</td></tr>
-        <tr><td>14</td><td>WAP in C to find shortest path by using Djikstra's algorithm (single source).</td><td>March 2026</td><td>before practical date</td></tr>
+        <tr><td>14</td><td>WAP in C to find shortest path by using Djikstra's algorithm (single source).</td><td>11 March 2026</td><td>before practical date</td></tr>
         <tr><td>15</td><td>WAP in C to find spanning tree of given graph by using Kruskal's algorithm</td><td>March 2026</td><td>before practical date</td></tr>
         <tr><td>16</td><td>WAP in C to find spanning tree of given graph by using Prim's algorithm</td><td>11 March, 2026</td><td>before practical date</td></tr>
         <tr><td>17</td><td>WAP in C to find max and min value from given dataset by using min-max algorithm</td><td>12 March, 2026</td><td>before practical date</td></tr>
