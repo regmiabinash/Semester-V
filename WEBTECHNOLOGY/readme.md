@@ -15,7 +15,7 @@
         <tr><td>4</td><td>Prepare an external CSS file for body, table and image and include it in an HTML page.</td><td>19/05/2026</td><td></td></tr>
         <tr><td>5</td><td>Create a form and apply the required JavaScript validation for it.</td><td>19/05/2026</td><td></td></tr>
         <tr><td>6</td><td>Write an XML for 5 students, including reg.no, name, roll no, and project name.</td><td>19/05/2026</td><td></td></tr>
-        <tr><td>7</td><td>Display student name and project name from above (Question no. 6) XML file using XPath.</td><td></td><td></td></tr>
+        <tr><td>7</td><td>Display student name and project name from above (Question no. 6) XML file using XPath.</td><td>19/05/2026</td><td></td></tr>
         <tr><td>8</td><td>Create a login page and check for user authentication using server-side code and database.</td><td></td><td></td></tr>
         <tr><td>9</td><td>Write code for "Remember me" feature in the login page.</td><td></td><td></td></tr>
         <tr><td>10</td><td>Create a database and a table. Store user input from question no.3 in the database table using PHP and MySQL.</td><td></td><td></td></tr>
