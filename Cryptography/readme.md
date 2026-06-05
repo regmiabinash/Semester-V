@@ -10,7 +10,7 @@
     </thead>
     <tbody>
         <tr><td>1</td><td>WAP to implement Caesar Cipher.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
-        <tr><td>2</td><td>WAP to implement Hill Cipher</td><td>2026/01/21</td><td>2026/01/27</td></tr>
+        <tr><td>2</td><td>WAP to implement Hill Cipher.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>3</td><td>WAP to implement Playfair Cipher</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>4</td><td>WAP to implement Railfence Cipher</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>5</td><td>WAP to implement working of S-box</td><td>2026/01/21</td><td>2026/01/27</td></tr>
