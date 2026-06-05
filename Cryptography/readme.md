@@ -13,7 +13,7 @@
         <tr><td>2</td><td>WAP to implement Hill Cipher.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>3</td><td>WAP to implement Playfair Cipher.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>4</td><td>WAP to implement Railfence Cipher.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
-        <tr><td>5</td><td>WAP to implement working of S-box</td><td>2026/01/21</td><td>2026/01/27</td></tr>
+        <tr><td>5</td><td>WAP to implement working of S-box.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>6</td><td>WAP to implement working of expansion and compression P-box</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>7</td><td>WAP to implement working of DES with Key generation</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>8</td><td>WAP to simulate the meet-in-the-middle attack in DES</td><td>2026/01/21</td><td>2026/01/27</td></tr>
