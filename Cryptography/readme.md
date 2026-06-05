@@ -16,7 +16,7 @@
         <tr><td>5</td><td>WAP to implement working of S-box.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>6</td><td>WAP to implement working of expansion and compression P-box.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>7</td><td>WAP to implement working of DES with Key generation.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
-        <tr><td>8</td><td>WAP to simulate the meet-in-the-middle attack in DES</td><td>2026/01/21</td><td>2026/01/27</td></tr>
+        <tr><td>8</td><td>WAP to simulate the meet-in-the-middle attack in DES.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>9</td><td>WAP to implement working of AES</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>10</td><td>WAP to implement working of IDEA</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>11</td><td>WAP to simulate Extended Euclidean Algorithm</td><td>2026/01/27</td><td>2026/02/04</td></tr>
