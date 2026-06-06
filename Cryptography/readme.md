@@ -23,7 +23,7 @@
         <tr><td>12</td><td>WAP to implement Fermat's, Euler's Theorem and Euler's totient function.</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>13</td><td>WAP to implement polynomial arithmetic operations.</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>14</td><td>WAP to test primality of large numbers.</td><td>2026/01/27</td><td>2026/02/04</td></tr>
-        <tr><td>15</td><td>WAP to simulate Diffe-Hellman Key Exchange Protocol</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>15</td><td>WAP to simulate Diffe-Hellman Key Exchange Protocol.</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>16</td><td>WAP to implement RSA based cryptosystem</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>17</td><td>WAP to implement Elgamal Cryptosystem</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>18</td><td>WAP to implement Message Authentication Code</td><td>2026/02/17</td><td>2026/02/26</td></tr>
