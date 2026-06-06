@@ -30,7 +30,7 @@
         <tr><td>19</td><td>WAP to implement MD4.</td><td>2026/02/17</td><td>2026/02/26</td></tr>
         <tr><td>20</td><td>WAP to implement MD5.</td><td>2026/02/17</td><td>2026/02/26</td></tr>
         <tr><td>21</td><td>WAP to implement SHA-1.</td><td>2026/02/17</td><td>2026/02/26</td></tr>
-        <tr><td>22</td><td>WAP to simulate Digital Signature based on DSS and RSA</td><td>2026/02/17</td><td>2026/02/26</td></tr>
+        <tr><td>22</td><td>WAP to simulate Digital Signature based on DSS and RSA.</td><td>2026/02/17</td><td>2026/02/26</td></tr>
         <tr><td>23</td><td>WAP to simulate Needham-Schroeder Protocol</td><td>2026/02/17</td><td>2026/02/26</td></tr>
         <tr><td>24</td><td>WAP to simulate Kerberos Protocol</td><td>2026/02/17</td><td>2026/02/26</td></tr>
         <tr><td>25</td><td>WAP to implement SHA-256 and SHA-512</td><td>2026/02/17</td><td>2026/02/26</td></tr>
