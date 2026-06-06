@@ -19,7 +19,7 @@
         <tr><td>8</td><td>WAP to simulate the meet-in-the-middle attack in DES.</td><td>2026/01/21</td><td>2026/01/27</td></tr>
         <tr><td>9</td><td>WAP to implement working of AES.</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>10</td><td>WAP to implement working of IDEA.</td><td>2026/01/27</td><td>2026/02/04</td></tr>
-        <tr><td>11</td><td>WAP to simulate Extended Euclidean Algorithm</td><td>2026/01/27</td><td>2026/02/04</td></tr>
+        <tr><td>11</td><td>WAP to simulate Extended Euclidean Algorithm.</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>12</td><td>WAP to implement Fermat's, Euler's Theorem and Euler's totient function.</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>13</td><td>WAP to implement polynomial arithmetic operations</td><td>2026/01/27</td><td>2026/02/04</td></tr>
         <tr><td>14</td><td>WAP to test primality of large numbers</td><td>2026/01/27</td><td>2026/02/04</td></tr>
