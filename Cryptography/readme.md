@@ -35,7 +35,7 @@
         <tr><td>24</td><td>WAP to simulate Kerberos Protocol.</td><td>2026/02/17</td><td>2026/02/26</td></tr>
         <tr><td>25</td><td>WAP to implement SHA-256 and SHA-512.</td><td>2026/02/17</td><td>2026/02/26</td></tr>
         <tr><td>26</td><td>WAP to check if given two numbers are co-prime or not.</td><td>2026/02/17</td><td>2026/02/26</td></tr>
-        <tr><td>27</td><td>Preparing Linux Lab Environment</td><td>2026/03/13</td><td>2026/03/16</td></tr>
+        <tr><td>27</td><td>Preparing Linux Lab Environment.</td><td>2026/03/13</td><td>2026/03/16</td></tr>
         <tr><td>28</td><td>Linux Basic Commands</td><td>2026/03/14</td><td>2026/03/20</td></tr>
         <tr><td>29</td><td>Users, Groups,Permission</td><td>2026/03/15</td><td>2026/03/20</td></tr>
         <tr><td>30</td><td>Users, Group Administration and Special Permissions</td><td>2026/03/16</td><td>2026/03/20</td></tr>
