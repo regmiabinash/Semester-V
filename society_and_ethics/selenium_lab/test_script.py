@@ -26,9 +26,7 @@ def create_jira_bug(test_name, failure_reason):
     except Exception as e:
         print(f"❌ Jira connection error: {e}")
 
-# =========================================================================
 # 2. RUN SELENIUM EDGE AUTOMATION TEST
-# =========================================================================
 print("Starting Microsoft Edge browser...")
 
 # Configure Edge options to bypass SSL/TLS certificate warnings
