@@ -1,13 +1,13 @@
 import time
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.edge.service import Service
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from jira import JIRA
 
 # =========================================================================
-# 1. SETUP DETAILS (Ensure JIRA_SERVER is your actual workspace domain!)
+# 1. SETUP DETAILS (Make sure to verify your JIRA_SERVER URL name!)
 # =========================================================================
-JIRA_SERVER = "https://regmiabinash72.com.np"  # <-- FIX THIS VALUE
+JIRA_SERVER = "https://atlassian.net"  # Update with your workspace prefix
 JIRA_EMAIL = "meronaamdavidho@gmail.com"
 JIRA_API_TOKEN = "ATATT3xFfGF004S5Q2n_MJ-AOY84yO0I4I4gcna2SOKNMSYe939Kvl1vRcfVxCNHqsKNEhIcQha7SAwlw2fI_uyCgwzv8-wUvxmHno3NQ0KPx77TmrXtCDhdUAidSGN8x7NTiOny5MgZL-e1IS5iYshwweGioaozVRYkUvLPRgOE-IzPBBYvfcU=8F82BE7D"
 JIRA_PROJECT_KEY = "PROJ"
@@ -18,47 +18,48 @@ def create_jira_bug(test_name, failure_reason):
         bug_issue = {
             'project': {'key': JIRA_PROJECT_KEY},
             'summary': f'Automated Test Failed: {test_name}',
-            'description': f'Selenium test failed.\n\nReason:\n{failure_reason}',
+            'description': f'Selenium automation test failed.\n\nReason:\n{failure_reason}',
             'issuetype': {'name': 'Bug'},
         }
         new_issue = jira.create_issue(fields=bug_issue)
-        print(f"Successfully logged Jira ticket: {new_issue.key}")
+        print(f"✅ Successfully logged Jira ticket: {new_issue.key}")
     except Exception as e:
-        print(f"Jira error: {e}")
+        print(f"❌ Jira connection error: {e}")
 
 # =========================================================================
-# 2. RUN SELENIUM AUTOMATION TEST
+# 2. RUN SELENIUM EDGE AUTOMATION TEST
 # =========================================================================
-print("Starting browser...")
+print("Starting Microsoft Edge browser...")
 
-# Set up configuration options to force locate your Google Chrome application 
-options = webdriver.ChromeOptions()
-options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
-
-# If Chrome is installed in your user folder instead, uncomment the line below:
-# options.binary_location = r"C:\Users\dell\AppData\Local\Google\Chrome\Application\chrome.exe"
+# Configure Edge options to bypass SSL/TLS certificate warnings
+options = webdriver.EdgeOptions()
+options.add_argument('--allow-insecure-localhost')
+options.add_argument('--ignore-certificate-errors')
+options.set_capability("acceptInsecureCerts", True)
 
 try:
-    # Initialize driver with custom binary paths
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    # Pass options configuration into the driver setup
+    driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=options)
     
-    driver.get("https://herokuapp.com")
+    # Using Google which has a flawless SSL setup to avoid any network handshake issues
+    driver.get("https://google.com")
     time.sleep(2)
     
-    expected_title = "Wrong Title"
+    # We deliberately test a wrong title so it triggers your Jira bug logging functionality!
+    expected_title = "Wrong Title For Testing"
     actual_title = driver.title
     
-    assert expected_title == actual_title, f"Expected {expected_title} but got {actual_title}"
-    print("Test passed!")
+    assert expected_title == actual_title, f"Expected '{expected_title}' but got '{actual_title}'"
+    print("Test passed successfully!")
 
 except AssertionError as error:
-    print("Test Failed! Sending bug to Jira...")
-    create_jira_bug("User Login Verification", str(error))
+    print("⚠️ Test Assertion Failed! Transferring bug log information to Jira...")
+    create_jira_bug("Google Homepage Verification Test", str(error))
     
 except Exception as e:
-    print(f"Selenium initialization error: {e}")
+    print(f"❌ Automation runtime error: {e}")
 
 finally:
-    # Check if driver initialized successfully before calling quit
+    # Safely terminate the running driver instance
     if 'driver' in locals():
         driver.quit()
