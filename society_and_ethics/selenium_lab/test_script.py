@@ -9,7 +9,7 @@ from jira import JIRA
 # =========================================================================
 JIRA_SERVER = "https://atlassian.net"  # Update with your workspace prefix
 JIRA_EMAIL = "meronaamdavidho@gmail.com"
-JIRA_API_TOKEN = "ATATT3xFfGF004S5Q2n_MJ-AOY84yO0I4I4gcna2SOKNMSYe939Kvl1vRcfVxCNHqsKNEhIcQha7SAwlw2fI_uyCgwzv8-wUvxmHno3NQ0KPx77TmrXtCDhdUAidSGN8x7NTiOny5MgZL-e1IS5iYshwweGioaozVRYkUvLPRgOE-IzPBBYvfcU=8F82BE7D"
+# JIRA_API_TOKEN = "ATATT3xFfGF004S5Q2n_MJ-AOY84yO0I4I4gcna2SOKNMSYe939Kvl1vRcfVxCNHqsKNEhIcQha7SAwlw2fI_uyCgwzv8-wUvxmHno3NQ0KPx77TmrXtCDhdUAidSGN8x7NTiOny5MgZL-e1IS5iYshwweGioaozVRYkUvLPRgOE-IzPBBYvfcU=8F82BE7D"
 JIRA_PROJECT_KEY = "PROJ"
 
 def create_jira_bug(test_name, failure_reason):
