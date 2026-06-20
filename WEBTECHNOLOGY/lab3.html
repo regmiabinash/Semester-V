@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif; 
             line-height: 1.3;
             margin:0;
-
+            background-color: #f4f7f6; /* Added background color to see white form */
         }
 
         .form {
@@ -19,16 +19,38 @@
             background: white;
             margin: 30px auto;
             border-radius: 9px;
-            box-shadow: 0 3px 11 px rgba(0,0,0.1,0.3); 
-            margin-bottom: 70px;
+            /* FIXED: Removed space in '11px' and fixed rgba syntax */
+            box-shadow: 0 3px 11px rgba(0,0,0,0.1); 
+            padding: 20px; /* Added internal padding so fields don't touch the edge */
+        }
+
+        /* Added input styling so form fields aren't squished */
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; 
+        }
+
+        /* Added button styling so it fills the form width */
+        button {
+            width: 100%;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
         }
 
         label {
             display: block;
             font-weight: bold;
             margin-bottom: 4px;
-            color: #888;
-
+            color: #555; /* Darkened slightly for readability */
         }
         
         button:hover {
@@ -41,16 +63,17 @@
         }
 
         header {
-            background-color: #00044444;
+            background-color: #0056b3; /* Changed from transparent color for visibility */
             color: white;
             padding: 20px;
             text-align: center;
         }
 
         main {
-            max-width : 300px;
+            max-width : 500px; /* FIXED: Increased from 300px to fit the 400px form */
             margin: 30px auto;
             padding : 10px 30px;
+            padding-bottom: 80px; /* Prevents fixed footer overlap */
         }
 
         footer {
@@ -63,8 +86,6 @@
             width: 100%;
         }
     </style>
-
-
 </head>
 <body>
 
@@ -76,8 +97,6 @@
 
     <div>
     <main>
-
-        
         <div class ="form">
             <h2>Create Your Account</h2>
             <form action = "#" method = "POST">
@@ -108,10 +127,9 @@
         </div>
     </main></div>
         
-        
-        <div>
+    <div>
     <footer>
-        <p>&copy; 2083 XYZ Travel Agency, Kathmandu, Nepal. All Rights Reserved.</p>
+        <p>&copy; 2026 XYZ Travel Agency, Kathmandu, Nepal. All Rights Reserved.</p>
     </footer></div>
     
 </body>
