@@ -156,8 +156,31 @@
                 document.getElementById('addressError').style.display = "none";
             }
             
-            let emailPattern = /^[^\s@]+@[^\s@]
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('emailError').style.display = "block";
+                status = false;
+
+            }else{
+                document.getElementById('emailError').style.display = "none";
+            }
+
+            if dob === "" {
+                document.getElementById('dobError').style.display = "block";
+                status = false;
+
+            }else {
+                document.getElementById('dobError').style.display = "none";
+            }
+
+            if (!status){
+                event.preventDefault();
+                return false;
+            }
+            alert("Form Submitted");
+            return true;
         }
+        </script>
     
 </body>
 </html>
