@@ -99,7 +99,7 @@
     <main>
         <div class ="form">
             <h2>Create Your Account</h2>
-            <form id="regForm" action = "#" method = "POST" onsubmit="return validateForm(event)">
+            <form id="regForm" action = "#" method = "GET" onsubmit="return validateForm(event)">
             
                 <div>
                     <label for="name">Full Name</label>
@@ -149,7 +149,7 @@
             }
             
 
-            if (addres === "") {
+            if (address === "") {
                 document.getElementById('addressError').style.display = "block";
                 status = false;
             }else{
@@ -165,7 +165,7 @@
                 document.getElementById('emailError').style.display = "none";
             }
 
-            if dob === "" {
+            if (dob === "") {
                 document.getElementById('dobError').style.display = "block";
                 status = false;
 
