@@ -50,8 +50,8 @@
                 let namePath= "/student_records/student/name";
                 let projectPath = "/student_records/student/project";
 
-                let nameResult = xmlDoc.evaluate(namePath, xmlDoc, null, XpathResult.ANY_TYPE, null);
-                let projectResult = xmlDoc.evaluate(projectPath, xmlDoc, null, XpathResult.ANY_TYPE,  null);
+                let nameResult = xmlDoc.evaluate(namePath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+                let projectResult = xmlDoc.evaluate(projectPath, xmlDoc, null, XPathResult.ANY_TYPE,  null);
 
                 let nameNode = nameResult.iterateNext();
                 let projectNode = projectResult.iterateNext();
