@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7</title>
+    <style>
+        body{
+            font-family: Arial , sans-serif;
+            background-color: #f4f7f6;
+            padding: 20px;
+        }
+
+        h2{
+            color: #0056b3;
+            text-align: center;
+        }
+
+        table{
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse; 
+            background: white;
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Names and Project Titles</h2>
+
+    <table id = "resultTable">
+        <tr>
+            <th>Student Name</th>
+            <th>Project Name</th>
+        </tr>
+    </table>
+
+    <script>
+        let xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "lab6.html", true);
+        xhttp.send();
+
+        xhttp.onreadystatechange = function() {
+            if(this.readyState == 4 && this.status == 200){
+                let xmlDoc = this.responseXML;
+                let table = document.getElementById("resultTable");
+
+                let namePath= "/student_records/student/name";
+                let projectPath = "/student_records/student/project";
+
+                let nameResult = xmlDoc.evaluate(namePath, xmlDoc, null, XpathResult.ANY_TYPE, null);
+                let projectResult = xmlDoc.evaluate(projectPath, xmlDoc, null, XpathResult.ANY_TYPE,  null);
+
+                let nameNode = nameResult.iterateNext();
+                let projectNode = projectResult.iterateNext();
+
+                while(nameNode && projectNode){
+                    let row = `<tr>
+                    <td>${nameNode.textContent}</td>
+                    <td>${projectNode.textContent}</td>
+                    </tr>`;
+                    table.innerHTML += row;
+
+                    nameNode = nameResult.iterateNext();
+                    projectNode = projectResult.iterateNext();
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
