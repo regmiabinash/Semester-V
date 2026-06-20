@@ -1,46 +1,51 @@
-<!-- Prepare an external CSS file for body, table and image and include it in an HTML page. -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>External CSS Implementation</title>
-    <link rel="stylesheet" href="styles.css">
- </head>
- <body>
-    <h1>Welcome to XYZ Travel Agency Page!</h1>
+    <title>Lab 4 | External CSS Implementation</title>
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <h1 style="text-align: center; color: #0056b3;">XYZ Travel Agency Packages</h1>
+    
+    <!-- Styled Image Element -->
     <img src="https://unsplash.com" alt="Kathmandu Valley">
 
+    <!-- Styled Table Element -->
     <table>
         <thead>
             <tr>
-                <th>Tour Package Name</th>
+                <th>Package Name</th>
                 <th>Duration</th>
+                <th>Difficulty</th>
                 <th>Price</th>
             </tr>
         </thead>
-
         <tbody>
             <tr>
-                <td>Everest Base Camp Trekking</td>
-                <td>14 days</td>
-                <td>$3,333</td>
+                <td>Everest Base Camp Trek</td>
+                <td>14 Days</td>
+                <td>Hard</td>
+                <td>$1,450</td>
             </tr>
-
             <tr>
                 <td>Kathmandu Cultural Tour</td>
-                <td>4 days</td>
-                <td>$400</td>
+                <td>3 Days</td>
+                <td>Easy</td>
+                <td>$250</td>
             </tr>
-
             <tr>
-                <td>Custom Nepali Holiday</td>
-                <td>Varies</td>
-                <td>Contact for pricing</td>
+                <td>Pokhara & Chitwan Safari</td>
+                <td>7 Days</td>
+                <td>Easy</td>
+                <td>$600</td>
             </tr>
         </tbody>
     </table>
-    
- </body>
- </html>
+
+</body>
+</html>

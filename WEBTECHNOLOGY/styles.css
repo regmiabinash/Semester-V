@@ -14,7 +14,7 @@ body {
             width: 100%;
             max-width: 700px;
             margin: 30px auto;
-            border-collapse: collapse;
+            /* border-collapse: collapse; */
             background-color: #ffff;
             box-shadow: 0 4px 7px rgba(0, 0, 0, 0.04);
             padding: 12px 13px;
