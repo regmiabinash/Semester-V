@@ -23,32 +23,6 @@
         <tr><td>12</td><td>GPSS Simulation: Implementing TV Repair Problem</td><td>2026/03/26</td><td>2026/04/05</td></tr>
         <tr><td>13</td><td>GPSS Simulation: Implementing Turnstile Problem</td><td>2026/03/26</td><td>2026/04/05</td></tr>
         <tr><td>14</td><td>GPSS Simulation: Periodic Inventory System</td><td>2026/03/26</td><td>2026/04/05</td></tr>
-        <!-- <tr><td>15</td><td></td><td></td><td></td></tr>
-        <tr><td>16</td><td></td><td></td><td></td></tr>
-        <tr><td>17</td><td></td><td></td><td></td></tr>
-        <tr><td>18</td><td></td><td></td><td></td></tr>
-        <tr><td>19</td><td></td><td></td><td></td></tr>
-        <tr><td>20</td><td></td><td></td><td></td></tr>
-        <tr><td>21</td><td></td><td></td><td></td></tr>
-        <tr><td>22</td><td></td><td></td><td></td></tr>
-        <!-- <tr><td>23</td><td></td><td></td><td></td></tr>
-        <tr><td>24</td><td></td><td></td><td></td></tr>
-        <tr><td>25</td><td></td><td></td><td></td></tr>
-        <tr><td>26</td><td></td><td></td><td></td></tr>
-        <tr><td>27</td><td></td><td></td><td></td></tr>
-        <tr><td>28</td><td></td><td></td><td></td></tr>
-        <tr><td>29</td><td></td><td></td><td></td></tr>
-        <tr><td>30</td><td></td><td></td><td></td></tr>
-        <tr><td>31</td><td></td><td></td><td></td></tr>
-        <tr><td>32</td><td></td><td></td><td></td></tr>
-        <tr><td>33</td><td></td><td></td><td></td></tr>
-        <tr><td>34</td><td></td><td></td><td></td></tr>
-        <tr><td>35</td><td></td><td></td><td></td></tr>
-        <tr><td>36</td><td></td><td></td><td></td></tr>
-        <tr><td>37</td><td></td><td></td><td></td></tr>
-        <tr><td>38</td><td></td><td></td><td></td></tr>
-        <tr><td>39</td><td></td><td></td><td></td></tr>
-        <tr><td>40</td><td></td><td></td><td></td></tr> --> -->
     </tbody>
 </table>
 
